@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <!-- le lien que contient le "a" sert à renvoyer sur chaque partie de mon html lorsque l'on clique dessus  -->
+        <li>
+            <a href="SAE.html">Accueil</a>
+        </li>
+        <li>
+            <a href="BUT informatique.html">BUT informatique</a>
+        </li>
+        <li>
+            <a href="Formation.html">Formation</a>
+        </li>
+        <li>
+            <a href="Vie etudiante.html">Vie Étudiante</a>
+        </li>
+        <li>
+            <a href="Contact.html">Contact</a>
+        </li>
+    </ul>
+  </nav>
+
+
+  <main class="position">
+    <h2>Contactez-nous</h2>
+    <form action=" ">
+      <br><br><p>Les champs marqué par <em>*</em> sont obligatoires.</p><br>
+      <fieldset>
+        <legend>Contact</legend>
+          <label for="nom">Nom <em>*</em></label>
+          <input  aria-label="nom" id="nom" placeholder=" Nom Prénom" autofocus="" required=""><br>
+          <label for="telephone">Portable</label>
+          <input id="telephone" type="tel"  aria-label="téléphone" placeholder=" 06xxxxxxxx" pattern="06[0-9]{8}"><br>
+          <label for="email">Email <em>*</em></label>
+          <!-- <input id="email" type="email"  required="" pattern="[a-zA-Z].[0-9]*@gmail.com"> -->
+          
+          <input id="email" type="email" name="email" placeholder=" exemple@gmail.com" required pattern=".+@gmail.com" 
+          title="Merci de fournir uniquement une adresse email"><br>
+          <label for="age">Age <em>*</em></label>
+          <input id="age" type="number" aria-label="age" placeholder=" xx" pattern="[0-9]{2}" required=""><br>
+          <label for="sexe">Sexe</label>
+          <select id="sexe">
+            <option value="H" name="sexe">Homme</option>
+            <option value="F" name="sexe">Femme</option>                  
+          </select><br>
+          <label for="message">Message <em>*</em></label>
+          <textarea id="message" required
+          placeholder=" Mon message..."></textarea>
+      </fieldset>
+      <p><input type="submit" aria-label="envoyer" value="Envoyer"></p>
+    </form>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="https://iut.univ-lyon1.fr/">Weblinks</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="SAE.html">Mainpage</a></li>
+      </ul>
+      <p>&copy; 2021 Niang Jin || All rights reserved.</p>
+    </div>
+   </footer>   
+</body>
+</html>

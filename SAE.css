@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  overflow-x: hidden;
+}
+/*nav barre*/
+
+nav {
+  width: 100vw;
+  height: 50px;
+  position: sticky;
+  display: flex;
+  justify-content: flex-end; 
+  background-color:#b85042;
+  opacity: 1;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a { 
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: arial,x-locale-body,sans-serif;
+}
+
+
+
+
+/*fin nav barre*/
+
+/*timeline*/
+#Accueil{
+	font-family: 'Palanquin Dark';
+	font-weight: 900;
+	position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("image/JESPEREVRAIMENT.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5px;
+}
+h1{
+  font-size: 38px;
+  margin-top: auto;
+  color: white;
+  text-align: center;
+  }
+
+.timeline {
+	width:800px;
+	height: 20px;
+	list-style: none;
+	text-align: justify;
+	margin: 80px auto;
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, rgba(221, 217, 152, 0.836)), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(190, 199, 195, 0.644) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+}
+
+.timeline:after {display: inline-block; content: ""; width: 100%; }
+
+.timeline li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #b85042;
+	text-align: center;
+	line-height: 1.2;
+	position: relative;
+	border-radius: 50%;
+}
+
+.timeline li:before {
+	display: inline-block;
+	content: attr(data-year);
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+  color: white;
+}
+
+
+
+.timeline li:nth-child(odd):before {
+	top: -40px;
+}
+.timeline li:nth-child(even):before {
+	bottom: -40px;
+}
+
+.timeline li:after{
+	display: inline-block;
+	content: attr(data-text);
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+  color: white;
+}
+
+.timeline li:nth-child(odd):after {
+	bottom: 0;
+	margin-bottom: -10px;
+	transform: translate(-50%, 100%);
+}
+.timeline li:nth-child(even):after {
+	top: 0;
+	margin-top: -10px;
+	transform: translate(-50%, -100%);
+}
+
+
+
+/* fin timeline*/
+
+
+.backgrounda{
+  background: url("image/library1.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.backgroundb{
+  background: url("image/ordi.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.backgroundc{
+  background: url("image/livre1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+span{
+  padding-right: 900px;
+}
+
+
+
+.position-texte{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 400px;
+  color: #fff;
+}
+
+
+
+button{
+background-color: transparent;
+border-radius: 20px;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #fff;
+text-decoration: none;
+background-image: none;
+transition: .3s;
+cursor: pointer;
+display: inline-block;
+padding: 7px 50px;
+border: 1px solid #b85042;
+transition-delay: 0s!important;
+transition-duration: 0.4s;
+width: 420px;
+}
+
+button:hover {
+background-color: #b85042;
+color: white;
+}
+
+h2{
+color: #b85042;
+position: relative;
+}
+
+h2::before {
+content: '';
+position: absolute;
+left: -20px;
+top: 50px;
+width: 395px;
+height: 2px;
+background-color: #b85042;
+}
+
+section.main-wrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100vw;
+}
+
+footer {
+  background: black;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.4);
+  width: 100vw;
+  
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  display: block;
+  padding: .4rem .7rem;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li a:hover {
+  color: #b85042;
+}
+

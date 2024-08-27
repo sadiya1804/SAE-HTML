@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+   background: url("image/thumb-1920-938300.jpg");
+   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end; 
+    background-color: #b85042;
+    opacity: 1;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a { 
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: arial,x-locale-body,sans-serif;
+
+}
+
+.position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+    width: 45%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p {
+    margin-top: 0px;
+    font-family: arial,x-locale-body,sans-serif;
+    color: black;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    color: black;
+}
+
+legend {
+padding: 0px 3px;
+font-weight: bold;
+font-variant: small-caps;
+}
+
+label {
+width: 100px;
+display: inline-block;
+vertical-align: top;
+margin: 6px;
+}
+
+em {
+font-weight: bold;
+font-style: normal;
+color: #b85042;
+}
+
+input:focus {
+background:transparent;
+}
+
+input, textarea {
+    width: 400px;
+    height: 22px;
+}
+
+textarea {
+height: 100px;
+}
+
+select {
+width: 254px;
+color: black
+}
+
+input[type=checkbox] {
+width: 10px;
+}
+input[type=submit] {
+    width: 150px;
+    height: 40px;
+    color: black;
+}
+
+h2{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+div input{
+    text-align: center;
+}
+
+footer {
+    background: black;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  footer ul li {
+    display: inline-block;
+  }
+  
+  footer ul li a {
+    display: block;
+    padding: .4rem .7rem;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer ul li a:hover {
+    color: #b85042;
+  }
+  
+  
